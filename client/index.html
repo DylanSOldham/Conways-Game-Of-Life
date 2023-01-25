@@ -1,9 +1,39 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Platformer</title>
+        <title>Conway's Game of Life</title>
+        <link rel="stylesheet" href="index.css"/>
     </head>
     <body>
+        <main>
+            <div id="backdrop"></div>
+            <h1>Conway's Game of Life</h1>
+            <div id="content">
+                <canvas id="game-canvas" width="160" height="120"></canvas>
+            </div>
+            <p class="centered">
+                Context: <a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life">Conway's Game of Life</a>
+            </p>
+            <p>
+                This game is philosophically interesting because of how all the known or conceivable rules of our 
+                universe can be constructed starting from just these simple rules acting on an infinite grid 
+                of squares.
+            </p>
+            <p>
+                A lot of people put their hopes in the depths of physics to understand the
+                nature of reality, since those are the basic elements that govern the universe.
+                This is like trying to get insights about a computer by taking a closer
+                look at the mechanism of its transistors - useful in revealing where the hard boundaries
+                of operation are, but completely missing the larger point.
+            </p>
+            <p>
+                I think systems like Conway's Game of Life expose the possibility that what lies at the bottom
+                of reality might not have much bearing on what's possible at the limit. Like how you can build a 
+                reliable packet transfer protocol (TCP) out of an unreliable one (IP), and like how you can construct
+                seemingly any system imaginable through the simple rules of Conway's Game of Life, I believe that 
+                the bigger mysteries of our reality lie in its deeper complexities, not its root components.
+            </p>
+        </main>
         <script type="module" src="index.js"></script>
     </body>
 </html>

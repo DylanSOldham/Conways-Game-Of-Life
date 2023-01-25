@@ -26,6 +26,14 @@ class Renderer {
         this.ctx.fillRect(x, y, w, h);
     }
 
+    get width () {
+        return this.canvas.width;
+    }
+
+    get height () {
+        return this.canvas.height;
+    }
+
 };
 
 export { Renderer };

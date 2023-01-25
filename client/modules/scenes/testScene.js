@@ -1,24 +1,13 @@
-import { TestActor } from "../actors/testActor.js";
+import { ConwayController } from "../actors/conwayController.js";
 
-const testScene0 = {
+const Scene_GameOfLife = {
     load: () => {
         let actors = [];
 
-        actors.push(new TestActor(10, 10));
-        actors.push(new TestActor(100, 100));
+        actors.push(new ConwayController());
 
         return actors;
     }
 }
 
-const testScene1 = {
-    load: () => {
-        let actors = [];
-
-        actors.push(new TestActor(200, 200));
-
-        return actors;
-    }
-}
-
-export {testScene0, testScene1}
+export {Scene_GameOfLife}

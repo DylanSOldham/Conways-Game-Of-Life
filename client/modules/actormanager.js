@@ -29,12 +29,12 @@ class ActorManager {
         }
     }
 
-    updateActors (kb) {
+    updateActors (input) {
         for (let i = 0; i < this.actors.length; ++i) {
             let actor = this.actors[i];
 
             if (!actor.delete) {
-                actor.Update?.(kb);
+                actor.Update?.(input);
             } else {
                 this.actors.splice(index, 1);
             }
